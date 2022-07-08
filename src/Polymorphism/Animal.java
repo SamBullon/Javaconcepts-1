@@ -4,7 +4,7 @@ public class Animal {
     private String name, color;
 
     public void eat(){
-        System.out.println("munch munch");
+        System.out.println("Animal eats munch munch");
     }
 
     public String getName(){

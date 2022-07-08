@@ -6,8 +6,6 @@ public class Auto {
     String color;
     boolean asientos_cuero, climatizador;
 
-
-
 public Auto(){
     cauchos = 4;
     largo = 1000;

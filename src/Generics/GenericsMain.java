@@ -7,6 +7,8 @@ y usarla desde main en donde podemos especificar que tipo de dato
 
 package Generics;
 
+import Polymorphism.Dog;
+
 import java.util.ArrayList;
 
 public class GenericsMain {
@@ -15,14 +17,27 @@ public class GenericsMain {
         IntegerPrinter printer = new IntegerPrinter(25);
         printer.print();
 
-        // Aqui especifico que tipo de dato quiero a traves de <Integer>
-        GenericPrinter<Integer> genericprinter = new GenericPrinter<>(30);
-        genericprinter.print();
+        // Asi imprimimos un Integer con una clase generica
+        GenericPrinter<Integer> integerPrinter = new GenericPrinter<>(30);
+        integerPrinter.print();
         // lo mismo para el tipo de dato double uso <double>
-        GenericPrinter<Double> genericprinter2 = new GenericPrinter<>(33.5);
-        genericprinter2.print();
+        GenericPrinter<Double> doublePrinter = new GenericPrinter<>(33.5);
+        doublePrinter.print();
+        //lo mismo para imprimir Strings
+        GenericPrinter<String> stringPrinter = new GenericPrinter<>("Hola");
+        stringPrinter.print();
 
-        ArrayList<Object> cats = new ArrayList<>();
+        //An array of Class Cat
+        ArrayList<Cat> cats = new ArrayList<>();
+        cats.add(new Cat());
+        System.out.println(cats);
 
+         shout("Sam");
+         shout(54);
+         shout(new Cat());
+
+    }
+    public static <T> void shout(T thingToShout){
+        System.out.println(thingToShout + "!!!");
     }
 }

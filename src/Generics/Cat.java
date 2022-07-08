@@ -1,9 +1,16 @@
 package Generics;
 
-import Generics.Animal;
-
 public class Cat extends Animal {
-    public void eat(){
+    String name;
+
+    public Cat(String name){
+        this.name = name;
+    }
+    public Cat(){
+    }
+
+    public Cat eat(){
         System.out.println("cats eats meow meow");
+        return eat();
     }
 }

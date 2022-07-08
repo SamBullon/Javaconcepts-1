@@ -4,7 +4,8 @@ public class Animal {
     String name;
     int age;
 
-    public void eat() {
+    public Cat eat() {
         System.out.println("munch munch munch");
+        return null;
     }
 }

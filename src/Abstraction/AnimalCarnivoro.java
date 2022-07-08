@@ -5,4 +5,8 @@ public class AnimalCarnivoro extends Animal{
     public void alimentarse() {
         System.out.println("Carnivoro come carne");
     }
+
+    public void hacerSonido() {
+        System.out.println("Roar!!");
+    }
 }

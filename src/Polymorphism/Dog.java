@@ -6,7 +6,7 @@ public class Dog extends Animal{
     //Sobre el metodo eat heredado de Animal escribimos
     //Un nuevo metodo eat exclusivo para Dog
     public void eat(){
-        System.out.println("chum chum");
+        System.out.println("dog eats chum chum");
     }
    //aqui un ejemplo de method overloading ya que es mismo metodo eat
     // duplicod dentro de la clase Dog pero con diferentes parametros

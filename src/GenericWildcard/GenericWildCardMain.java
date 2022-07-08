@@ -19,7 +19,7 @@ public class GenericWildCardMain {
 
     }
     private static void printList(List<?> myList){
-        System.out.println();
+        System.out.println(myList);
     }
 
 }
